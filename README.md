@@ -1,3 +1,3 @@
 # Kokoa Clone 2020 Update
 
-GTML & CSS are so much better!
+HTML & CSS are so much better!
