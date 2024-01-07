@@ -46,3 +46,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* input 클릭 시 아웃라인 없애기 */
+input:focus{
+    outline: none;
+}
