@@ -1,88 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Open+Sans:wght@400;600&display=swap');
 @import "reset.css";
-@import "status-bar.css";
 @import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+
+/* Screens */
+@import "screens/login.css";
+
 body {
    font-family: 'Open Sans', sans-serif;
-}
-
-.welcome-header{
-    margin: 90px 0px;
-
-    /* 텍스트 가운데 정렬 */
-    text-align: center;
-
-    display: flex;
-
-    /* 위아래로 정렬 */
-    flex-direction: column;
-
-    /*  가운데 정렬 */
-    align-items: center;
-
-}
-
-.welcome-header__title{
-    margin-bottom: 40px;
-    font-size: 25px;
-}
-
-.welcome-header__text{
-    /*   너비고정 */
-    width: 60%;
-    /* 투명도/회색 */
-    opacity: 0.7;
-}
-
-#login-form{
-
-    /* form 위아래 정렬 */
-    display: flex;
-    flex-direction: column;
-    margin: 0px 30px;
-}
-
-
-
-#login-form input{
-    /* 테두리 없애기 */
-    border: none;
-
-    padding: 15px 0px;
-    font-size: 18px;
-    margin-bottom: 25px;
-  
-}
-
-/* input type이 submit이 아닐때에만 border-bottom과 transition이 적용 */
-/* 버튼에만 밑줄 효과가 안 들어감  */
-#login-form input:not([type="submit"]){
-     /* 아래 테두리(밑줄) */
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    transition: border-color 0.3s ease-in-out;
-}
-
-#login-form input::placeholder{
-    color:rgba(0,0,0,0.4);
-}
-
-#login-form input:focus{
-    border-color:var(--yellow);
-    /* var을 let나 const로 변경하면 적용이 안됨. 왜일까? 
-      --> 이건 css니까! let이나 const는 js에서만 사용한거!!*/
-}
-
-/* submit버튼에만 css적용 */
-#login-form input[type="submit"]{
-    background-color: var(--yellow);
-    cursor: pointer;
-    padding: 20px 0px;
-    border-radius: 5px;
-}
-
-#login-form a {
-    text-align:center;
-    text-decoration:none;
-    color:inherit;
-    font-size: 13px;
+   
+   /* 페이지 길이 늘이기 */
+   height: 1000vh; 
 }

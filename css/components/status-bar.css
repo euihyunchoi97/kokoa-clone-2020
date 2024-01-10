@@ -9,6 +9,12 @@
     justify-content: center;
     
     padding: 5px 3px;
+
+    /* status-bar 상단고정 */
+    position:fixed;
+    top:0;
+    width: 100%;
+    box-sizing: border-box;
 } 
 
 .status-bar__column{

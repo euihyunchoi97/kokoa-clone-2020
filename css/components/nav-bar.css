@@ -1,0 +1,78 @@
+.nav{
+    /* 스크롤을 해도 nav가 맨 밑에 붙어있게 하기 */
+    position:fixed;
+    bottom:0;
+    /* 여기까지 하면 width가 사라짐 -> width적용 */
+    width: 100%;
+
+    background-color: #f9f9fa;
+    padding:20px 50px;
+
+    /* padding 문제로 사라진 eclipsis 찾기 */
+    /* 문제 : padding을 적용시키자 아이콘들이 밀려서 ellipsis아이콘이 사라짐*/
+    /* 이유 : 좌우로 padding 50px를 적용하면서 padding 만큼 아이콘들이 사용할 width가 사라짐
+              padding으로 줘버린 공간은 사용할 수 없으니까!
+              css는 옆으로 padding으로 줘버린 공간만큼 늘어나게함
+
+              이 코드에서 nav에 width:100%를 줘서 nav가 스크린의 width를 100% 차지하도록 했음
+              CSS는 nav를 padding 값만큼 크게 만들어 버림*/
+
+    /* 해결방법 : box-sizing : border-box -> 내가 padding을 줘도 신경ㄴㄴ,box사이즈 늘리지마  */
+    box-sizing: border-box;
+    
+
+    border-top:1px solid rgba(121,121,121,0.3)
+}
+.nav__list{
+    /* 아이콘 세로에서 가로로 정렬 */
+    display: flex;
+
+    /* 아이콘을 띄엄띄엄 위치 */
+    justify-content: space-between;
+}
+.nav__link{
+    color: #2e363e;
+    position: relative;
+}
+.nav__notification{
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+
+    /* 그러나 span은 display가 inline이기 때문에 가로 세로 크기 설정 못한다.
+        따라서 display를 block으로 바꿔줘야한다. */
+    display: block;
+
+    /* 사각형을 원으로 만들기 : 사각형 width의 반 값을 입력 */
+    border-radius: 15px;
+
+    /* 숫자 1이 가운데 오도록 만들기 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color : white;
+    font-weight: 600;
+
+    /* 빨간 원이 comment아이콘 위에 오도록 만들기 */
+    /* position:absolute -> 요소를 문서의 일부에 절대 위치로 배정할 수 있다. */
+    /* position:absolute는 가장 가까운 relative를 가진 부모 기준으로 움직임(이 코드에서는 nav__link) */
+    position: absolute;
+    
+    /* 상단 오른쪽으로 이동 */
+    left : 15px;
+    bottom : 15px;
+
+}
+
+    /* 혼자서 해보기 : ellipsis 상단 오른쪽 작은 점 */
+.nav__smallnoti{
+        background-color: tomato;
+        width : 7px;
+        height: 7px;
+        border-radius: 3.5px;
+    
+        position : absolute;
+        left: 28px;
+        bottom : 25px;
+    }
