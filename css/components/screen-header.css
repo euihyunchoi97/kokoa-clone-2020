@@ -1,7 +1,9 @@
 .screen-header{
     display: flex; /*컨테이너를 플렉스 컨테이너로 만듦*/
     justify-content: space-between;
-    padding: 25px;
+    padding: 40px var(--horizontal-space) var(--horizontal-space);
+    font-size: 16px;
+    
 
     /* 중앙에 위치하게 하기 */
     /* align-items : 이 속성은 플렉스 컨테이너(부모 요소)에 적용된다. 

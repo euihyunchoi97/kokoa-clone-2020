@@ -1,0 +1,51 @@
+.user-component{
+    /* justify-content: space-between : 
+        - display: flex인 경우 사용
+        - Flex Container 내의 Flex Items들을 주축에 따라 어떻게 정렬할지 지정하는 속성
+        - space-between은 첫번째 아이템과 마지막 아이템을 컨테이너 양 끝에 정렬,
+                          나머지 아이템은 동일한 간격으로 분산 */
+    justify-content: space-between;
+}
+
+.user-component,
+.user-component__column:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.user-component__avatar{
+    width:70px;
+    height: 70px;
+    border-radius: 30px;
+    margin-right: 20px
+}
+
+.user-component__title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.user-component__subtitle{
+    margin-top: 5px;
+    font-size: 17px;
+    color: rgba(0,0,0,0.5);
+}
+
+.user-component__avatar--xl{
+    width: 80px;
+    height: 80px;
+}
+
+.user-component__avatar--sm{
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+.user-component__title--not-bold{
+    font-weight: 400;
+}
+
+.user-component__column:last-child{
+    color:rgba(0,0,0,0.5);
+}
