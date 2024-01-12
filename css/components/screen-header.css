@@ -1,0 +1,21 @@
+.screen-header{
+    display: flex; /*컨테이너를 플렉스 컨테이너로 만듦*/
+    justify-content: space-between;
+    padding: 25px;
+
+    /* 중앙에 위치하게 하기 */
+    /* align-items : 이 속성은 플렉스 컨테이너(부모 요소)에 적용된다. 
+                     플렉스 아이템들이 교차축을 기준으로 어떻게 정렬되는지 제어함
+       center : "center"로 설정되면, 플렉스 아이템들이 교차 축을 기준으로 가운데 정렬됨 */
+    align-items: center;
+}
+
+.screen-header__title{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen-header__icons span {
+    /* 아이콘 사이에 간격두기 */
+    margin-left: 25px;
+}
