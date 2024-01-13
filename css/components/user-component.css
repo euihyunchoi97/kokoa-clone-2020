@@ -47,5 +47,14 @@
 }
 
 .user-component__column:last-child{
-    color:rgba(0,0,0,0.5);
+    color:rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-component__time{
+    /* 왜 margin-bottom 적용이 안되는거야...아아아아아아아 */
+   margin-bottom: 11px !important;
+   display: block;
 }

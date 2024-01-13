@@ -1,0 +1,20 @@
+.badge{
+        background-color: tomato;
+        width: 30px;
+        height: 30px;
+    
+        /* 그러나 span은 display가 inline이기 때문에 가로 세로 크기 설정 못한다.
+            따라서 display를 block으로 바꿔줘야한다. */
+        display: block;
+    
+        /* 사각형을 원으로 만들기 : 사각형 width의 반 값을 입력 */
+        border-radius: 15px;
+    
+        /* 숫자 1이 가운데 오도록 만들기 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        color : white;
+        font-weight: 600;
+}
