@@ -76,3 +76,15 @@
         left: 28px;
         bottom : 25px;
     }
+
+    /* 혼자서 해보기 : gear 상단 오른쪽 작은 점 */
+.nav__gearnoti{
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+
+    position: absolute;
+    left: 15px;
+    bottom : 20px;
+}
