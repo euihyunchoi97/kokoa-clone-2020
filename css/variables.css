@@ -1,4 +1,7 @@
 :root{
+    /* 같은 코드가 여러번 반복되면 변수로 만든다. */
     --yellow:#fae100;
     --horizontal-space: 25px;
+    --main-boarder:1px solid rgba(0,0,0,0.2);
+
 }
