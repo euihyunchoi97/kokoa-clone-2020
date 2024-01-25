@@ -1,0 +1,21 @@
+.icon-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-row__icon{
+    display: flex;
+    /* flex-direction 소석은 Flexbox 컨테이너에서 Flex 아이템이 배치되는 주축의 방향을 설정한다. */
+    /* flex-direction:column 의 주축은 '수직' 방향, Flex아이템을 '열'로 배치 */
+    /* flex-direction:row 의 주축은 '수평' 방향, Flex아이템을 '행'으로 배치 */
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-row__icon i{
+    font-size: 35px;
+}
+
+.icon-row__icon span {
+    margin-top: 18px;
+}
